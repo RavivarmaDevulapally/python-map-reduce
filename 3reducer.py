@@ -3,10 +3,6 @@ r = open("03.txt", "w")
 
 thisKey = ""
 thisValue = 0
-# sum = 0.0
-
-
-
 
 for line in s:
   data = line.strip().split('\t')
@@ -23,15 +19,8 @@ for line in s:
     
    
   # apply the aggregation function
-  # thisValue += float(Item_MRP)
-  # thisValue = min(thisValue,float(Item_MRP))
   thisValue += 1
   
-
-
-
-  
-
 # output the final entry when done
 r.write(thisKey + '\t' + str(thisValue)+'\n')
 
